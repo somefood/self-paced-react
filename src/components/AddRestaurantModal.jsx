@@ -1,13 +1,15 @@
+import styles from './AddRestaurantModal.module.css';
+
 export default function AddRestaurantModal() {
     return (
         <>
-            <div className="modal modal--open">
-                <div className="modal-backdrop"></div>
-                <div className="modal-container">
-                    <h2 className="modal-title text-title">새로운 음식점</h2>
+            <div className={`${styles.modal} ${styles.modalOpen}`}>
+                <div className={styles.modalBackdrop}></div>
+                <div className={styles.modalContainer}>
+                    <h2 className={`${styles.modalTitle} text-title`}>새로운 음식점</h2>
                     <form>
                         {/*카테고리*/}
-                        <div className="form-item form-item--required">
+                        <div className={`${styles.formItem} ${styles.formItemRequired}`}>
                             <label htmlFor="category text-caption">카테고리</label>
                             <select name="category" id="category" required>
                                 <option value="">선택해 주세요</option>
@@ -21,21 +23,21 @@ export default function AddRestaurantModal() {
                         </div>
 
                         {/*음식점 이름*/}
-                        <div className="form-item form-item--required">
+                        <div className={`${styles.formItem} ${styles.formItemRequired}`}>
                             <label htmlFor="name text-caption">이름</label>
                             <input type="text" name="name" id="name" required/>
                         </div>
 
                         {/*설명*/}
-                        <div className="form-item">
+                        <div className={styles.formItem}>
                             <label htmlFor="description text-caption">설명</label>
                             <textarea name="description" id="description" cols="30" rows="5"></textarea>
-                            <span className="help-text text-caption">메뉴 등 추가 정보를 입력해 주세요.</span>
+                            <span className={`${styles.helpText} text-caption`}>메뉴 등 추가 정보를 입력해 주세요.</span>
                         </div>
 
                         {/*추가 버튼*/}
-                        <div className="button-container">
-                            <button className="button button--primary text-caption">추가하기</button>
+                        <div className={styles.buttonContainer}>
+                            <button className={`${styles.button} ${styles.buttonPrimary} text-caption`}>추가하기</button>
                         </div>
                     </form>
                 </div>

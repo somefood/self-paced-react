@@ -4,7 +4,7 @@ export default function Header() {
     return (
         <>
             <header className={styles.gnb}>
-                <h1 className={`${styles.gnb__title} ${styles['text-title']}`}>점심 뭐 먹지</h1>
+                <h1 className={`${styles.gnb__title} ${styles.textTitle}`}>점심 뭐 먹지</h1>
                 <button type="button" className={styles.gnb__button} aria-label="음식점 추가">
                     <img src="./add-button.png" alt="음식점 추가"/>
                 </button>
