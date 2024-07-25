@@ -1,9 +1,10 @@
-import categoryKorean from '../assets/category-korean.png'
-import categoryAsian from '../assets/category-asian.png'
-import categoryChinese from '../assets/category-chinese.png'
-import categoryEtc from '../assets/category-etc.png'
-import categoryWestern from '../assets/category-western.png'
-import categoryJapanese from '../assets/category-japanese.png'
+import categoryKorean from '../assets/category-korean.png';
+import categoryAsian from '../assets/category-asian.png';
+import categoryChinese from '../assets/category-chinese.png';
+import categoryEtc from '../assets/category-etc.png';
+import categoryWestern from '../assets/category-western.png';
+import categoryJapanese from '../assets/category-japanese.png';
+import './RestaurantList.css';
 
 export default function RestaurantList() {
   return (

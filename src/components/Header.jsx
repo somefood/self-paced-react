@@ -1,4 +1,5 @@
-import addButton from '../assets/add-button.png'
+import addButton from '../assets/add-button.png';
+import './Header.css';
 
 export default function Header() {
   return (
