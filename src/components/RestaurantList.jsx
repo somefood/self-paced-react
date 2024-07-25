@@ -1,3 +1,10 @@
+import categoryKorean from '../assets/category-korean.png'
+import categoryAsian from '../assets/category-asian.png'
+import categoryChinese from '../assets/category-chinese.png'
+import categoryEtc from '../assets/category-etc.png'
+import categoryWestern from '../assets/category-western.png'
+import categoryJapanese from '../assets/category-japanese.png'
+
 export default function RestaurantList() {
   return (
     <>
@@ -6,7 +13,7 @@ export default function RestaurantList() {
 
           <li className="restaurant">
             <div className="restaurant__category">
-              <img src="./category-korean.png" alt="한식" className="category-icon"/>
+              <img src={categoryKorean} alt="한식" className="category-icon"/>
             </div>
             <div className="restaurant__info">
               <h3 className="restaurant__name text-subtitle">피양콩할마니</h3>
@@ -21,7 +28,7 @@ export default function RestaurantList() {
 
           <li className="restaurant">
             <div className="restaurant__category">
-              <img src="./category-chinese.png" alt="중식" className="category-icon"/>
+              <img src={categoryChinese} alt="중식" className="category-icon"/>
             </div>
             <div className="restaurant__info">
               <h3 className="restaurant__name text-subtitle">친친</h3>
@@ -32,7 +39,7 @@ export default function RestaurantList() {
 
           <li className="restaurant">
             <div className="restaurant__category">
-              <img src="./category-japanese.png" alt="일식" className="category-icon"/>
+              <img src={categoryJapanese} alt="일식" className="category-icon"/>
             </div>
             <div className="restaurant__info">
               <h3 className="restaurant__name text-subtitle">잇쇼우</h3>
@@ -45,7 +52,7 @@ export default function RestaurantList() {
 
           <li className="restaurant">
             <div className="restaurant__category">
-              <img src="./category-western.png" alt="양식" className="category-icon"/>
+              <img src={categoryWestern} alt="양식" className="category-icon"/>
             </div>
             <div className="restaurant__info">
               <h3 className="restaurant__name text-subtitle">이태리키친</h3>
@@ -55,7 +62,7 @@ export default function RestaurantList() {
 
           <li className="restaurant">
             <div className="restaurant__category">
-              <img src="./category-asian.png" alt="아시안" className="category-icon"/>
+              <img src={categoryAsian} alt="아시안" className="category-icon"/>
             </div>
             <div className="restaurant__info">
               <h3 className="restaurant__name text-subtitle">호아빈 삼성점</h3>
@@ -65,7 +72,7 @@ export default function RestaurantList() {
 
           <li className="restaurant">
             <div className="restaurant__category">
-              <img src="./category-etc.png" alt="기타" className="category-icon"/>
+              <img src={categoryEtc} alt="기타" className="category-icon"/>
             </div>
             <div className="restaurant__info">
               <h3 className="restaurant__name text-subtitle">도스타코스 선릉점</h3>
